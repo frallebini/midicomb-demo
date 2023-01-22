@@ -1,7 +1,9 @@
+---
+title: MidiComb
+---
+## Demos
 
-# Demos
-
-## Example 1
+### Example 1
 
 Metadata:
 - **Bpm:** 130
@@ -13,6 +15,6 @@ Metadata:
 - **Chord progression:** Am-F-C-G-Am-F-C-G
 
 Generated tune #1:
-<audio controls>
+<audio controls style="width: 400px;">
   <source src="assets/1a/tune.mp3" type="audio/mpeg">
 </audio>

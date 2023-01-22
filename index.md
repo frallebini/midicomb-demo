@@ -8,7 +8,7 @@ title: MidiComb
 Metadata:
 
 |bpm|key|time signature|number of measures|genre|rhythm|chord progression|
-|:---:|:---:|---|---|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |130|Am|4/4|8|new age|standard|Am-F-C-G-Am-F-C-G|
 
 Generated tune #1:
@@ -28,7 +28,7 @@ Generated tune #2:
 Metadata:
 
 |bpm|key|time signature|number of measures|genre|rhythm|chord progression|
-|:---:|:---:|---|---|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |80|Am|4/4|8|cinematic|standard|Am-Gmaj7-Fmaj7-G-Cmaj7-Dm7-Am-A#maj7-E+-Am|
 
 Generated tune #1:
@@ -48,7 +48,7 @@ Generated tune #2:
 Metadata:
 
 |bpm|key|time signature|number of measures|genre|rhythm|chord progression|
-|:---:|:---:|---|---|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |120|Cmaj|4/4|8|cinematic|standard|C-F-Am-G|
 
 Generated tune #1:
@@ -68,7 +68,7 @@ Generated tune #2:
 Metadata:
 
 |bpm|key|time signature|number of measures|genre|rhythm|chord progression|
-|:---:|:---:|---|---|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |100|Cmaj|4/4|4|new age|standard|F-G-Em-Am-F-G-Em-Am|
 
 Generated tune #1:

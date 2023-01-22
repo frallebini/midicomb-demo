@@ -1,1 +1,1 @@
-Code for [MidiComb project page](https://frallebini.github.io/midicomb-demo)
+Code for the [MidiComb project page](https://frallebini.github.io/midicomb-demo)

@@ -20,17 +20,13 @@ However, they only focus on stage 1, i.e. they train a Transformer-XL ([Dai et a
 
 That is where our work comes into play: the goal of MidiComb is to address stage 2 of the combinatorial music generation task. Specifically, MidiComb takes in input the desired shared metadata values, queries ComMU for a set of samples satisfying those requirements, and generates a complete musical composition by combining those samples. 
 
-Under the hood, the sample arrangement is modeled as a scheduling problem analogous to the [job shop problem](https://developers.google.com/optimization/scheduling/job_shop?hl=en) (as suggested in the figure above), where each "machine" represents a track role[^1] — main melody, accompaniment, riff, etc. In other words, MidiComb solves stage 2 of combinatorial music generation by only relying on constraint programming (CP) techniques.
+Under the hood, the sample arrangement task is modeled as a scheduling problem analogous to the [job shop problem](https://developers.google.com/optimization/scheduling/job_shop?hl=en) (as suggested in the figure above), where each ``machine'' represents a track role[^1] — main melody, accompaniment, riff, etc. In other words, MidiComb solves stage 2 of combinatorial music generation by only relying on constraint programming (CP) techniques.
 
 ### Generating the samples
 
 MidiComb was originally intended to work with samples extracted directly from the ComMU dataset, as described in the previous section. Nonetheless, as an extension of our initial work, we also incorporated Hyun et al.'s Transformer model into the generation pipeline, so that the final piece of music is the combination of samples which have themselves been generated.
 
 Although this procedure more closely resembles the proposed formulation of combinatorial music generation, going beyond the finite (although huge) set of possible combinations of ComMU samples comes at a price: the generated samples tend to be more inconsistent in their quality than those contained in the dataset, resulting in a piece of music that not always pleases the ear. A more refined generative model may be the answer; we leave this further exploration for future work.[^2]
-
-[^1]: *Track role* is one of the ComMU metadata. However, it is not among those that need to be shared for the harmonicity of the composition, as the final piece of music can (and should) be made of samples with different track roles. Therefore, it is not specified as an input to MidiComb.
-
-[^2]: For example, it might be worth coming up with models specifically tailored to music structure, instead of relying on preexisting techniques developed for natural language. To be fair though, Hyun et al.'s model should probably be interpreted as a mean to showcase the dataset potential rather than a solution to the music generation task.
 
 ## Demo 1
 
@@ -40,7 +36,7 @@ Input:
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |130|Am|4/4|8|new age|standard|Am-F-C-G-Am-F-C-G|
 
-Output #1 (ComMU samples):
+Output #1 (ComMU samples)[^3]:
 
 <audio controls style="width: 400px;">
   <source src="assets/1a/tune.mp3" type="audio/mpeg">
@@ -135,5 +131,11 @@ Output #3 (generated samples):
 <audio controls style="width: 400px;">
   <source src="assets/4c/tune.mp3" type="audio/mpeg">
 </audio>
+
+[^1]: *Track role* is one of the ComMU metadata. However, it is not among those that need to be shared for the harmonicity of the composition, as the final piece of music can (and should) be made of samples with different track roles. Therefore, it is not specified as an input to MidiComb.
+
+[^2]: For example, it might be worth coming up with models specifically tailored to music structure, instead of relying on preexisting techniques developed for natural language. To be fair though, Hyun et al.'s model should probably be interpreted as a mean to showcase the dataset potential rather than a solution to the music generation task.
+
+[^3]: This output and those that follow were obtained by converting the actual output of MidiComb — a MIDI file — to MP3 via GarageBand for macOS.
 
 ---

@@ -20,7 +20,7 @@ However, they only focus on stage 1, i.e. they train a Transformer-XL ([Dai et a
 
 That is where our work comes into play: the goal of MidiComb is to address stage 2 of the combinatorial music generation task. Specifically, MidiComb takes in input the desired shared metadata values, queries ComMU for a set of samples satisfying those requirements, and generates a complete musical composition by combining those samples. 
 
-Under the hood, the sample arrangement task is modeled as a scheduling problem analogous to the [job shop problem](https://developers.google.com/optimization/scheduling/job_shop?hl=en) (as suggested in the figure above), where each ``machine'' represents a track role[^1] — main melody, accompaniment, riff, etc. In other words, MidiComb solves stage 2 of combinatorial music generation by only relying on constraint programming (CP) techniques.
+Under the hood, the sample arrangement task is modeled as a scheduling problem analogous to the [job shop problem](https://developers.google.com/optimization/scheduling/job_shop?hl=en) (as suggested in the figure above), where each "machine" represents a track role[^1] — main melody, accompaniment, riff, etc. In other words, MidiComb solves stage 2 of combinatorial music generation by only relying on constraint programming (CP) techniques.
 
 ### Generating the samples
 

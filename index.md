@@ -136,6 +136,6 @@ Output #3 (generated samples):
 
 [^2]: For example, it might be worth coming up with models specifically tailored to music structure, instead of relying on preexisting techniques developed for natural language. To be fair though, Hyun et al.'s model should probably be interpreted as a mean to showcase the dataset potential rather than a solution to the music generation task.
 
-[^3]: This output and those that follow were obtained by converting the actual output of MidiComb — a MIDI file — to MP3 via GarageBand for macOS.
+[^3]: This output and those that follow were obtained by converting the actual output of MidiComb (a MIDI file) to MP3 via GarageBand for macOS.
 
 ---

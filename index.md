@@ -22,7 +22,7 @@ That is where our work comes into play: the goal of MidiComb is to address stage
 
 Under the hood, the sample arrangement task is modeled as a scheduling problem analogous to the [job shop problem](https://developers.google.com/optimization/scheduling/job_shop?hl=en) (as suggested in the figure above), where each "machine" represents a track role[^1] — main melody, accompaniment, riff, etc. In other words, MidiComb solves stage 2 of combinatorial music generation by only relying on constraint programming (CP) techniques.
 
-### Generating the samples
+### Sample generation
 
 MidiComb was originally intended to work with samples extracted directly from the ComMU dataset, as described in the previous section. Nonetheless, as an extension of our initial work, we also incorporated Hyun et al.'s Transformer model into the generation pipeline, so that the final piece of music is the combination of samples which have themselves been generated.
 
